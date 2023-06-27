@@ -11,16 +11,17 @@
         body {
             margin: 10px auto;
             /* margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto */
-            background-color: aliceblue;
+            background-color: #f0f8ff;
             border: 1px outset rgb(170, 170, 193);
             width: 60%;
             /* Percentage of the current page width */
             height: 80%;
             /* Percentage of the current view of the browser */
+            padding: 1em;
         }
 
         main {
-            height: 450px;
+            height: 80%;
             /* Let the main content occupy this amount of space*/
         }
 
@@ -63,7 +64,7 @@
 
         footer {
             width: 90%;
-            background-color: gray;
+            background-color: #d3d3d3;
             text-align: center;
             margin: 0 auto;
         }
@@ -71,6 +72,28 @@
         footer>p {
             padding: 1em;
 
+        }
+
+        /* Styling the products section*/
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .product-image {
+            height: 50px;
+        }
+
+       
+
+        td {
+            padding: 5px;
+            text-align: justify;
+        }
+
+        .product-image {
+            width: 80px;
+            height: auto;
         }
     </style>
 </head>
@@ -80,7 +103,7 @@
     <!--Header section-->
     <header>
         <nav>
-            <img src="images/logo.png" alt="Logo of Ebangha Cakes & Pastries" id="logo"> <span id="menus"><a
+            <a href="index.html"><img src="images/logo.png" alt="Logo of Ebangha Cakes & Pastries" id="logo"></a> <span id="menus"><a
                     href="index.html">Home</a><a href="menu.html">Menu</a><a href="contact.html">Contact</a><a
                     href="booking.html">Book</a> </span>
         </nav>
@@ -91,6 +114,98 @@
         <section id="header-section">
             <h1>Ebangha Cakes &amp; Pastries </h1>
             <h2>Your fresh and home-made pastries for all your occassions </h2>
+        </section>
+
+        <!--Creating the about section using html tables. After learning the CSS course
+    the student should be able to transform the table layout to grid or flex layout
+    -->
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="3"> <img src="images/ceo.jpg" alt="Image of Madam Ebangha" height="200" width="150">
+                    </td>
+                    <td>
+                        <h2>About Us</h2>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Welcome to Ebangha Cakes &amp; Pastries. We create hand crafted bespoke bakes to make any
+                            ocassion special. From unique center pieces to elegant
+                            cupcakes our bakes help create lasting memories and all with that delicious homemade taste
+                            we are known for.
+                        </p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="audio/audio-description.mp3" type="audio/mpeg">
+                            <source src="audio/audio-description.ogg" type="audio/ogg">
+                            <source src="audio/audio-description.wav" type="audio/wav">
+                            Your browser does not support the audio tag.
+                            <!--This will display if the browser is too old and does not support <audio> tag -->
+                        </audio>
+                    </td>
+                    <td> <a href="https://www.youtube.com/@programmingwithberns">Check my Youtube Channel</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Products section-->
+        <section>
+            <h2>Our Products</h2>
+            <p>Below is the list of our products</p>
+            <table>
+                <tr>
+                    <td><img src="images/banana-cake.jpg" alt="Image of banana cake" class="product-image"></td>
+                    <td>
+                        <h3>Banana Cake</h3>
+                        <p>A cross between banana bread and a drizzle cake, this easy banana loaf recipe is a quick bake
+                            that can be frozen. It's great for using up overripe bananas, too.</p>
+                    </td>
+                    <td><img src="images/coki-beans.jpg" alt="Image of Coki Beans" class="product-image"></td>
+                    <td>
+                        <h3>Koki Beans</h3>
+                        <p>Koki Beans - moist, tasty pudding-like steamed treat made with coarsely grounded black-eyed
+                            peas and some spinach. Great as a meal on its own or with boiled plantains!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="images/jollof-rice.jpg" alt="Image of Jollof rice" class="product-image"></td>
+                    <td>
+                        <h3>Jollof Rice</h3>
+                        <p>This JOLLOF RICE and CHICKEN is an easy yet tasty one-pan meal enjoyed in West African
+                            countries. It’s bursting with flavors from the tomato sauce, paprika, scotch bonnet, and the
+                            juices coming off from the well-seasoned chicken thighs. Serve it over regular nights or as
+                            a main course during the holidays!</p>
+                    </td>
+                    <td><img src="images/kwacoco.jpg" alt="Image of Kwacoco Bible" class="product-image"></td>
+                    <td>
+                        <h3>Kwacoco Bible </h3>
+                        <p>Kwacoco Bible - made from grated coco yam and mixed with spinach, smoked fish, red oil and
+                            other spices. It is wrapped in plantain leaves, steamed until cooked through. Very filling,
+                            flavorful and aromatic side dish!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="images/meat-pie.jpg" alt="Image of Meat pie" class="product-image"></td>
+                    <td>
+                        <h3>Meat Pie</h3>
+                        <p>Meat Pie (Beef Empanada)- slightly sweet, flaky and crusty with a succulent beef filling.
+                            Comes together quickly and flies off the table. Simply Delicious!!</p>
+                    </td>
+                    <td><img src="images/spinash-stew.jpg" alt="Image of Stewed Spinash" class="product-image"></td>
+                    <td>
+                        <h3>Stewed Spinash</h3>
+                        <p>Stewed Spinach - Super simple way of enjoy spinach African style – bursting with a good
+                            amount of greens and delivers the perfect amount of spice. A quick and easy way of putting
+                            greens on the table.</p>
+                    </td>
+                </tr>
+            </table>
         </section>
     </main>
     <!--End of Main Content-->
