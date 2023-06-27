@@ -93,6 +93,38 @@
             <h1>Ebangha Cakes &amp; Pastries </h1>
             <h2>Your fresh and home-made pastries for all your occassions </h2>
         </section>
+
+        <section>
+            <h3>Make a reservation for your food</h3>
+            <p>We deliver food at your door steps or at a designated place of your choice.</p>
+            <p>Please fill the form below to make your order</p>
+            <form action="#">
+                <label for="fullname">Full name</label> &nbsp;&nbsp;
+                <input type="text" name="fullname" id="fullname"> <br> <br>
+                <label for="email">Email</label>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="email" name="email" id="email"> <br> <br>
+                <label for="phone">Phone</label>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="tel" name="phone" id="phone"> <br><br>
+                <label for="food">Food</label> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <select name="food" id="food">
+                    <option value="">Select the food item to order</option>
+                    <option value="jollof-rice">Jollof Rice &amp; Chicken</option>
+                    <option value="meat-stew">Meat Stew &amp; Yam</option>
+                    <option value="fufu-and-eru">Fufu &amp; Eru</option>
+                    <option value="fish-and-plantains">Fish source &amp; plantains</option>
+                    <option value="okro-and-garri">Okro soup &amp; Garri</option>
+                </select> <br> <br>
+                <label for="address"><span style="font-size: small;">Delivery Address</span></label>&nbsp;&nbsp; &nbsp;
+                <input type="text" name="address" id="address"> <br> <br>
+                <label for="city">City</label>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="text" name="city" id="city"> <br> <br>
+                <label for="delivery-date"><span style="font-size: small;">Delivery date &amp; time</span></label>
+                <input type="datetime-local" name="delivery-date" id="delivery-date"> <br><br>
+                <div style="text-align: center;">
+                    <button type="submit">Order</button>
+                </div>
+            </form>
+        </section>
     </main>
     <!--End of Main Content-->
 
