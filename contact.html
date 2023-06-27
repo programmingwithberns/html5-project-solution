@@ -11,7 +11,7 @@
         body {
             margin: 10px auto;
             /* margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto */
-            background-color: aliceblue;
+            background-color: #f0f8ff;
             border: 1px outset rgb(170, 170, 193);
             width: 60%;
             /* Percentage of the current page width */
@@ -21,7 +21,7 @@
         }
 
         main {
-            height: 450px;
+            height: 80%;
             /* Let the main content occupy this amount of space*/
         }
 
@@ -64,7 +64,7 @@
 
         footer {
             width: 90%;
-            background-color: gray;
+            background-color: #d3d3d3;
             text-align: center;
             margin: 0 auto;
         }
@@ -72,6 +72,15 @@
         footer>p {
             padding: 1em;
 
+        }
+
+        .centralize {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            text-align: center;
         }
     </style>
 </head>
@@ -93,6 +102,44 @@
             <h1>Ebangha Cakes &amp; Pastries </h1>
             <h2>Your fresh and home-made pastries for all your occassions </h2>
         </section>
+
+        <section>
+            <h3 class="centralize center">Contact us</h3>
+            <p class="centralize center" style="margin-top: -1em;">Our opening times</p>
+            <table class="centralize">
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>: <time>10:00</time> &dash; <time>17:00</time></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>: <time>11:00</time> - <time>20:00</time></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>: Closed</td>
+                </tr>
+            </table>
+
+        </section>
+        <!--Emails, phone number and address-->
+        <table class="centralize">
+            <tr>
+                <td>Email: <a href="mailto:info@ebanghacakeries.com">info@ebanghacakeries.com</a>
+                <br>Tel: <a href="tel:+12222222222">+1 (222) 222-2222</a></td>
+                
+                <td>
+                    <h3>Visiting address</h3>
+                    <address>
+                        819 Melm Street<br>
+                        Wellbom, Florida 32094<br>
+                        United States
+                    </address>
+                </td>
+            </tr>
+        </table>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.361905346802!2d-82.814162!3d30.2267545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ef2404b2ff0577%3A0x5a618731ec73c1bc!2sElm%20St%2C%20Wellborn%2C%20FL%2032094%2C%20USA!5e0!3m2!1sen!2sfi!4v1687858354110!5m2!1sen!2sfi" width="100%" height="auto" style="border:1px solid lightblue; margin: 1em auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <!--End of Main Content-->
 
