@@ -73,6 +73,20 @@
             padding: 1em;
 
         }
+
+        #menu-table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid lightblue;
+            padding: 0.25em;
+        }
+
+       [role=cost]{
+            text-align: center;
+            font-weight: bold;
+        }
     </style>
 </head>
 <!--End of page head-->
@@ -92,6 +106,64 @@
         <section id="header-section">
             <h1>Ebangha Cakes &amp; Pastries </h1>
             <h2>Your fresh and home-made pastries for all your occassions </h2>
+        </section>
+        <!--The menu section-->
+        <section>
+            <h3>Our products</h3>
+            <p>Below is the list of our products</p>
+            <table id="menu-table">
+                <thead>
+                    <tr>
+                        <th colspan="3">Our weekly food menu</th>
+                    </tr>
+                    <tr>
+                        <th>Day</th>
+                        <th>Item</th>
+                        <th>Cost (FCFA)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Rice &amp; Groundnut soup</td>
+                        <td role="cost">1500</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Okro soup & Garri</td>
+                        <td role="cost">1800</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Potatoes hotpot</td>
+                        <td role="cost">1000</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Fish source &amp; plantains</td>
+                        <td rowspan="2" role="cost">2000</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Jollof rice &amp; chicken</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Fufu &amp; Eru</td>
+                        <td role="cost">3000</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Meat sauce &amp; yam</td>
+                        <td role="cost">2500</td>
+                    </tr>
+                </tbody>
+                <tfoot style="text-align: center;">
+                    <tr>
+                        <td colspan="3">We accept both Cash &amp; MoMo Payment</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
     </main>
     <!--End of Main Content-->
